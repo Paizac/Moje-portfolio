@@ -16,8 +16,84 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: var(--light-bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
 nav {
     position: sticky;
     top: 0;
-    background-color: aliceblue;
+    background-color: var(--card-bg-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-color);
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+p {
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+a {
+    transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+    color: var(--accent-color);
+    transform: translateY(-3px);
+}
+
+article {
+    transition: all 0.3s ease-out;
+}
+
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes fade-InUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px var(--primary-color);
+}
+
+textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px var(--primary-color);
+}
+
+.about-me {
+    border-radius: 50%;
+    border: 3px solid var(--accent-color);
+}
+
+section {
+    animation: fade-InUp 0.8s ease-out forwards;
 }
