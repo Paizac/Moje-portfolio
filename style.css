@@ -97,3 +97,10 @@ textarea:focus {
 section {
     animation: fade-InUp 0.8s ease-out forwards;
 }
+
+.form-group {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: transform 0.3s ease, var(--text-color) 0.3s ease;
+}
