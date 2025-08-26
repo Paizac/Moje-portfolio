@@ -5,10 +5,3 @@
 @import url('_projects.css');
 @import url('_contact.css');
 @import url('_footer.css');
-#about-me,
-#my-skills,
-#projects,
-#contact {
-    max-width: 960px;
-    margin: 0 auto;
-}
