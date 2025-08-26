@@ -52,6 +52,9 @@ p {
 
 a {
     transition: all 0.2s ease-in-out;
+    text-decoration-line: none;
+    color: var(--text-color);
+    padding: 20px;
 }
 
 a:hover {
@@ -98,9 +101,81 @@ section {
     animation: fade-InUp 0.8s ease-out forwards;
 }
 
-.form-group {
+header {
+    text-align: center;
+    padding: 40px 0;
+}
+
+header h2 {
+    margin-bottom: 30px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-link {
+    all: unset;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0.6em 1.5em;
+    border: var(--primary-color) solid 0.15em;
+    border-radius: 0.25em;
+    color: var(--primary-color);
+    font-size: 1.1em;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    overflow: hidden;
+    transition: border 300ms, color 300ms;
+    user-select: none;
+    z-index: 1;
+}
+
+.nav-link:hover {
+    color: var(--card-bg-color);
+}
+
+.nav-link:active {
+    border-color: var(--accent-color);
+}
+
+.nav-link::after,
+.nav-link::before {
+    content: "";
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transition: transform 0.3s ease, var(--text-color) 0.3s ease;
+    width: 9em;
+    aspect-ratio: 1;
+    background: var(--primary-color);
+    opacity: 50%;
+    border-radius: 50%;
+    transition: transform 500ms, background 300ms;
+    z-index: -1;
+}
+
+.nav-link::before {
+    left: 0;
+    transform: translateX(-8em);
+}
+
+.nav-link::after {
+    right: 0;
+    transform: translateX(8em);
+}
+
+.nav-link:hover:before {
+    transform: translateX(-1em);
+}
+
+.nav-link:hover:after {
+    transform: translateX(1em);
+}
+
+.nav-link:active:before,
+.nav-link:active:after {
+    background: var(--accent-color);
 }
