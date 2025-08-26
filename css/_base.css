@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #07553B;
+    --accent-color: #CED46A;
+    --text-color: #333333;
+    --light-bg-color: #FAFAF9;
+    --card-bg-color: #FFFFFF;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: var(--light-bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-color);
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+section {
+    padding: 80px 20px;
+    animation: fade-InUp 0.8s ease-out forwards;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 2px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+}
+
+@keyframes fade-InUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    40% {
+        transform: translateX(-50%) translateY(-20px);
+    }
+    60% {
+        transform: translateX(-50%) translateY(-10px);
+    }
+}
+
+@keyframes rotate-border {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes subtle-pan {
+    from {
+        background-position: 0% 0%;
+    }
+    to {
+        background-position: 100% 100%;
+    }
+}
+
+@keyframes rotate-pan {
+    from {
+        transform: rotate(0deg) scale(1);
+    }
+    to {
+        transform: rotate(360deg) scale(1.1);
+    }
+}

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>My First Portfolio Page</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,8 +35,19 @@
     <main>
         <section id="about-me">
             <h2>About me</h2>
-            <img src="images/moje-zdjecie.jpg" alt="moje zdjęcie" class="about-me">
-            <p>My name is Paweł Kłubko. I am a beginner <strong>web developer</strong>. I am currently learning HTML and CSS.</p>
+            <div class="about-me-content">
+                <div class="animated-border-wrap">
+                    <img src="images/moje-zdjecie.jpg" alt="moje zdjęcie" class="about-me">
+                </div>
+                <div class="about-me-text">
+                    <p>Hello, I'm Paweł. I'm a beginner web developer with a huge passion for creating clean, interactive, and aesthetically pleasing websites. My adventure with code began with simple curiosity, which quickly turned into a desire to build
+                        things that work and look good.</p>
+                    <p>I am drawn to the problem-solving process – from creating the perfect layout in CSS to future challenges with logic in JavaScript. I treat every project as an opportunity to learn something new and improve my skills. I believe that
+                        the key to success is continuous development and attention to detail.</p>
+                    <p>I am currently focusing on mastering the fundamentals of front-end development – HTML, CSS, and JavaScript. My goal is to become a versatile developer who can translate great design into functional, efficient code. If you are looking
+                        for someone with a passion for learning and a positive attitude, I would love to chat!</p>
+                </div>
+            </div>
         </section>
         <section id="my-skills">
             <h2>My skills</h2>
