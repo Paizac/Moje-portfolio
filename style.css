@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #07553B;
+    --accent-color: #CED46A;
+    --text-color: #333333;
+    --light-bg-color: #FAFAF9;
+    --card-bg-color: #FFFFFF;
+}
+
 html {
     scroll-behavior: smooth;
 }
