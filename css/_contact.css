@@ -55,3 +55,27 @@
     font-weight: 600;
     font-size: 0.9rem;
 }
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, bocx-shadow 0.3s ease;
+}
+
+.contact-fomr input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(7, 85, 59, 0.1);
+}
+
+.contact-form .button {
+    align-self: flex-start;
+}
