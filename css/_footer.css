@@ -5,3 +5,25 @@ footer {
     padding: 40px 0;
     margin-top: 60px;
 }
+
+.footer-content {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-social-links {
+    margin-bottom: 20px;
+}
+
+.footer-social-links a {
+    color: var(--card-bg-color);
+    margin: 0 15px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-social-links a:hover {
+    color: var(--accent-color);
+}
